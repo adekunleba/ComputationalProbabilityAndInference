@@ -18,9 +18,10 @@ sum_value = 0
 for k, v in possibilities:
     sum_value += k**2 + v **2
 
-#Get the probatility of each space
+#TASK: Get the probatility of each space, remember to take note that the function
+#####....is x**2 + y**2
 #Create a dictionary
-#Get the probability of eact entry by summing over 
+#Get the probability of eacH entry by summing over 
 
 dictionary = {}
 

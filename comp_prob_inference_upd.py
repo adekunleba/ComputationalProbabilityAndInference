@@ -171,4 +171,16 @@ prob_W_T_col_mapping = {label: index for index, label in enumerate(prob_W_T_cols
 prob_W_T_array[prob_W_T_row_mapping['rainy'], prob_W_T_col_mapping['cold']]
 
 
+#########CODING INDEPENDENT VARIABLES IN PYTHON#################
+import numpy as np; prob_W_I = np.array([[1/2, 0], [0, 1/6], [0, 1/3]])
 
+#Get marginal probability of W and I
+prob_W = prob_W_I.sum(axis=1)
+prob_I = prob_W_I.sum(axis=0)
+
+
+prob_W
+#Out[109]: array([ 0.5       ,  0.16666667,  0.33333333])
+
+prob_I
+#Out[110]: array([ 0.5,  0.5])
